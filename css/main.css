@@ -1,0 +1,177 @@
+.body{
+	margin: 0;
+	background-color: grey;
+}
+/*header css*/
+header {
+  width:90vw;
+  margin: 0 5% 0 5%;
+  background-color: #72C1FF;
+  transition: all 0.75s;	
+  display: flex;
+  color: grey;
+
+  /*&.below-zero {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 7px #555;
+  }*/
+}
+.head{
+	padding: .5% 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+#heading{
+	color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: grey;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	width: 50%;
+	display: flex;
+	align-items:center;
+	margin-left: 10px;
+}
+#navbar{
+	display:flex;
+	align-items:center;
+}
+.dropdown{
+	display:flex;
+	align-items:center;
+}
+.nav{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+}
+
+/*body css*/
+.mainbody{
+	width: 100vw;
+	height: 85vh;
+	padding: 0 5% 0 5%;
+    height: 100vh;
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 1px;
+
+}
+.intro{
+	width: 100vw;
+	border-style: dotted;
+    border-width: 1px;
+    background-color: #FFF;
+    padding: 0 10% 5% 10%;
+    background-image: url("placeholder.jpg");
+    background-size: 30vw;
+    background-repeat: no-repeat;
+    background-position:3% 24%;
+}
+.top{
+	margin-left: 25vw;
+}
+.benifits{
+	width: 100vw;
+	border-style: dotted;
+    border-width: 1px;
+    background-color: white;
+    padding: 0 10% 5% 10%;
+    margin-top: 5px;
+}
+a {
+	color:white;
+}
+.about{
+	font-family: 'Raleway', sans-serif;
+	margin-top: 1%;
+
+}
+h2{
+	font-family: 'Raleway', sans-serif;
+	text-decoration: underline;
+	margin: 0;
+}
+ul .why{
+	margin-top: 1%;
+}
+li .why{
+	font-family: 'Raleway', sans-serif;
+	margin-top:1%;
+}
+
+.title{
+	padding-top:2%;
+	margin:0;
+	font-size: 29px;
+}
+
+.links{
+	display: flex;
+	justify-content:flex-end;
+	color: white;
+}
+button{
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  text-shadow: 2px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 9px 20px 10px 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/*media queries*/
+
+@media (max-width: 1100px) {
+	.mainbody{
+		height: 80vh;
+	}
+	.intro{
+		width: 80vw;
+		height: 40vh;
+		border-style: dotted;
+	    border-width: 1px;
+	    background-color: white;
+	    padding: 0 10% 5% 10%;
+	}
+	.benifits{
+		width: 80vw;
+		height: 20vh;
+		border-style: dotted;
+	    border-width: 1px;
+	    background-color: white;
+	    padding: 0 10% 5% 10%;
+	}
+	.title{
+		font-size: 30px;
+	}
+	.why{
+		font-size: 20px;
+	}
+	.about{
+		font-size: 20px;
+	}
+}
+
+
+
+
