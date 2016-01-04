@@ -17,41 +17,71 @@ header {
   }*/
 }
 .head{
-	padding: .5% 0;
+	padding: .5% 4vw;
 	display: flex;
-	align-items:center;
-	justify-content:center;
+	/*align-items:center;
+	justify-content:center;*/
 }
+
+.logo{
+	height: 13vh;
+}
+
 #heading{
 	color: white;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: grey;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
-	width: 50%;
+	width: 70%;
 	display: flex;
 	align-items:center;
 	margin-left: 10px;
 }
+
 #navbar{
 	display:flex;
 	align-items:center;
 }
+
 .dropdown{
 	display:flex;
 	align-items:center;
 }
+
 .nav{
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 }
 
+ul.navbars{
+	display: flex;
+	text-decoration: none;
+	justify-content:center;
+	align-content: center;
+	padding: 2px 2px 2px 2px;
+	background-color:white;
+}
+
+li.navbars{
+	list-style-type: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding: 10px 10px 10px 10px;
+}
+
+li a{
+	color:black;
+}
+
 /*body css*/
 .mainbody{
 	width: 100vw;
-	height: 85vh;
+	height: 100vh;
 	padding: 0 5% 0 5%;
-    height: 100vh;
     display: flex;
     flex-wrap:wrap;
     margin-top: 1px;
@@ -62,23 +92,30 @@ header {
 	border-style: dotted;
     border-width: 1px;
     background-color: #FFF;
-    padding: 0 10% 5% 10%;
+    padding: 3% 10% 5% 10%;
     background-image: url("placeholder.jpg");
     background-size: 30vw;
     background-repeat: no-repeat;
     background-position:3% 24%;
+    border-color: white;
+    height: 58vh;
 }
 .top{
 	margin-left: 25vw;
 }
 .benifits{
 	width: 100vw;
+	height: 42vh;
 	border-style: dotted;
     border-width: 1px;
     background-color: white;
     padding: 0 10% 5% 10%;
-    margin-top: 5px;
+    border-color: white;
 }
+.right{
+	float:right;
+}
+
 a {
 	color:white;
 }
@@ -94,16 +131,25 @@ h2{
 }
 ul .why{
 	margin-top: 1%;
+
 }
 li .why{
 	font-family: 'Raleway', sans-serif;
 	margin-top:1%;
+}
+div.why{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	height: 25vh;
 }
 
 .title{
 	padding-top:2%;
 	margin:0;
 	font-size: 29px;
+	display: flex;
+	justify-content:center;
 }
 
 .links{
@@ -139,39 +185,90 @@ button:hover {
   text-decoration: none;
 }
 
-/*media queries*/
+/*classes*/
+div.classes{
+	background-color: white;
+	width: 90vw;
+}
+.mia{
+	font-size: 75px;
+	background-color: white;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 50vh;
+	width: 90vw;
+	margin-left: 5vw;
+}
+.month{
+	font-size: 20px;
+}
 
-@media (max-width: 1100px) {
+/*  footer and advertisements  */
+
+.advertisement{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 10vh;
+	background-color:white;
+	margin: 0 5% 0 5%;
+}
+
+.ad1{
+	margin-right:10px;
+}
+
+.ad2{
+	margin-left: 10px;
+}
+
+footer{
+	background-color: #72C1FF;
+	height: 10vh;
+	width: 90vw;
+	display: flex;
+	justify-content:center;
+	align-content:center;
+    margin: 0 5% 0 5%;
+}
+
+/*media queries*/
+@media(max-width: 1200px) {
 	.mainbody{
-		height: 80vh;
+		height: 100vh;
 	}
-	.intro{
-		width: 80vw;
-		height: 40vh;
-		border-style: dotted;
-	    border-width: 1px;
-	    background-color: white;
-	    padding: 0 10% 5% 10%;
-	}
+
 	.benifits{
-		width: 80vw;
-		height: 20vh;
-		border-style: dotted;
-	    border-width: 1px;
-	    background-color: white;
-	    padding: 0 10% 5% 10%;
+		height: 40vh;
 	}
-	.title{
-		font-size: 30px;
+}
+
+@media(max-width: 900px) {
+	.mainbody{
+		height: 100vh;
 	}
-	.why{
-		font-size: 20px;
+
+	.benifits{
+		height: 40vh;
 	}
+
 	.about{
 		font-size: 20px;
 	}
 }
 
+@media(max-width: 400px) {
+	.mainbody{
+		height: 100vh;
+	}
 
+	.benifits{
+		height: 40vh;
+	}
+	.about{
+		font-size: 20px;
+	}
+}
 
 
