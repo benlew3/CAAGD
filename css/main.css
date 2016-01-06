@@ -189,7 +189,8 @@ button:hover {
 /*classes*/
 div.classes{
 	background-color: white;
-	width: 89.8vw;
+	width: 90vw;
+	margin-left: 4.5%
 }
 .mia{
 	font-size: 75px;
@@ -235,7 +236,11 @@ footer{
 }
 
 /*media queries*/
-
+@media(max-width: 1500px) {
+	div.classes{
+		margin-left: 4.6%;
+	}
+}
 @media(max-width: 1400px) {
 	.mainbody{
 		height: 115vh;
@@ -263,7 +268,7 @@ footer{
 		margin-left: 4.5%
 	}
 	div.classes{
-		width: 90vw;
+		margin: auto;
 	}
 }
 
