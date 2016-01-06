@@ -79,9 +79,9 @@ li a{
 
 /*body css*/
 .mainbody{
-	width: 100vw;
+	width: 90vw;
 	height: 100vh;
-	padding: 0 5% 0 5%;
+	margin: 0 5% 0 4.5%;
     display: flex;
     flex-wrap:wrap;
     margin-top: 1px;
@@ -129,13 +129,14 @@ h2{
 	text-decoration: underline;
 	margin: 0;
 }
-ul .why{
+ul.why{
 	margin-top: 1%;
 
 }
-li .why{
+li.why{
 	font-family: 'Raleway', sans-serif;
 	margin-top:1%;
+	font-size: 16px;
 }
 div.why{
 	display: flex;
@@ -188,7 +189,7 @@ button:hover {
 /*classes*/
 div.classes{
 	background-color: white;
-	width: 90vw;
+	width: 89.8vw;
 }
 .mia{
 	font-size: 75px;
@@ -212,7 +213,7 @@ div.classes{
 	align-items:center;
 	height: 10vh;
 	background-color:white;
-	margin: 0 4.55% 0 4.65%;
+	margin: 0 4.69% 0 4.5%;
 }
 
 .ad1{
@@ -230,17 +231,13 @@ footer{
 	display: flex;
 	justify-content:center;
 	align-content:center;
-    margin: 0 5% 0 4.65%;
+    margin: 0 5% 0 4.5%;
 }
 
 /*media queries*/
 
 @media(max-width: 1400px) {
 	.mainbody{
-		height: 100vh;
-	}
-	.mainbody{
-		margin-left:-0.5%;
 		height: 115vh;
 	}
 	div.why{
@@ -248,7 +245,8 @@ footer{
 		max-width: 500px;
 	}
 	li.why{
-		margin-right: 3%;
+		margin-right: 4%;
+		font-size: 14px;
 	}
 	.intro{
 		height:72vh;
@@ -257,12 +255,15 @@ footer{
 		height: 44vh;
 	}
 	.advertisement{
-	margin: 0 4.25% 0 4.5%;
+	margin: 0 4.4% 0 4.5%;
 	height: 10vh;
 	}
 	footer{
-		width: 90.1vw;
+		width: 90vw;
 		margin-left: 4.5%
+	}
+	div.classes{
+		width: 90vw;
 	}
 }
 
