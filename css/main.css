@@ -237,11 +237,6 @@ footer{
 }
 
 /*media queries*/
-@media(max-width: 1500px) {
-	div.classes{
-		margin-left: 4.6%;
-	}
-}
 @media(max-width: 1400px) {
 	.mainbody{
 		height: 115vh;
